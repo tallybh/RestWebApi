@@ -8,4 +8,8 @@ public interface IProductRepository
     Task<Product> GetProductById(int id);
     Task<Product> AddNewProduct(Product p);
 
+    Task<bool> Delete(int id);
+
+    Task<bool> Update(Product p);
+
 }
